@@ -1,13 +1,13 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
+-- fastn.package: sarvom.github.io/jetbrains-typography
 
 -- fastn.dependency: fastn-community.github.io/site-doc
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/footer
-;; replace inter-font package name with font package name you want to create
-;; typography document for:
--- fastn.dependency: fastn-community.github.io/inter-font
+
+-- fastn.dependency: sarvom.github.io/jetbrains
+
 
 -- fastn.auto-import: fastn-community.github.io/site-doc
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
@@ -23,4 +23,4 @@
 
 
 # GitHub
-  url: https://github.com/<user_name>/<repo_name>
+  url: https://github.com/sarvom/jetbrains-typography

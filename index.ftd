@@ -1,28 +1,22 @@
--- import: <user_name>.github.io/<repo_name>/custom
--- import: fastn-community.github.io/inter-font/assets as inter-assets
-
-;; ⚠️fastn-builders::⚠️ before using this file please find and replace inter-font
-;; with font package name you have given inside this package 
-;; `<user_name>.github.io/<repo_name>/FASTN.ftd file
-;; `<font-name>` replace with font you are using. 
-;; remove these comments once you are done.
+-- import: sarvom.github.io/jetbrains-typography/custom
+-- import: sarvom.github.io/jetbrains/assets as jetbrains-assets
 
 
 
--- site-doc.doc-home: <repo_name> package
-site-title: `<repo_name>`
+-- site-doc.doc-home: jetbrains-typography package
+site-title: `jetbrains-typography`
 show-tabs: false
-github-url: <user_name>.github.io/<repo_name>
-current-package: <user_name>.github.io/<repo_name>
+github-url: sarvom.github.io/jetbrains-typography
+current-package: sarvom.github.io/jetbrains-typography
 
-This FTD font `<repo_name>` can be used for your ftd web projects. 
+This FTD font `jetbrains-typography` can be used for your ftd web projects. 
 
-You can use this <repo_name> inside the `FTD` project. Follow below
+You can use this jetbrains-typography inside the `FTD` project. Follow below
 instructions to use this font package.
 
--- site-doc.header: How to use <repo_name>?
+-- site-doc.header: How to use jetbrains-typography?
 
-To use this <repo_name> inside your `ftd` web project, if you are
+To use this jetbrains-typography inside your `ftd` web project, if you are
 using our [doc-site](https://github.com/fifthtry/doc-site) theme then you just
 have to pass types to `ds.page`
 
@@ -32,68 +26,68 @@ making a sandwich.
 -- cb.code: Add this to your FASTN.ftd
 lang: ftd
 
-\-- fastn.dependency: <user_name>.github.io/<repo_name>
+\-- fastn.dependency: sarvom.github.io/jetbrains-typography
 
 -- site-doc.header: Next Step
 
-Now import `<repo_name>` inside `.ftd` file as shown below:
+Now import `jetbrains-typography` inside `.ftd` file as shown below:
 
 -- cb.code:
 lang: ftd
 
-\-- import: <user_name>.github.io/<repo_name>
+\-- import: sarvom.github.io/jetbrains-typography
 
 
 -- site-doc.header: Next Step
 
-add `<repo_name>` `types` to `ds.page` `types` attribute as shown
+add `jetbrains-typography` `types` to `ds.page` `types` attribute as shown
 below:
 
 -- cb.code:
 lang: ftd
 
 \-- ds.page:
-types: $<repo_name>.types
+types: $jetbrains-typography.types
 
 -- site-doc.header: Next Step
 
-Once you add `types: $<repo_name>.types` inside your `.ftd` file,
-`<repo_name>` will be added as `fastn` default typography to your
+Once you add `types: $jetbrains-typography.types` inside your `.ftd` file,
+`jetbrains-typography` will be added as `fastn` default typography to your
 `ds.page` and to all components you add inside `ds.page`.
 
 If you're not using `doc-site` theme and building your own `fastn` web theme.
-Then, add `<repo_name>` dependency into `FASTN.ftd` file.
+Then, add `jetbrains-typography` dependency into `FASTN.ftd` file.
 
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: <user_name>.github.io/<repo_name>
+\-- fastn.dependency: sarvom.github.io/jetbrains-typography
 
 -- site-doc.header: Next Step
 
-Once you add above dependency, then import `<repo_name>` inside your
+Once you add above dependency, then import `jetbrains-typography` inside your
 `.ftd` file:
 
 -- cb.code:
 lang: ftd
 
-\-- import: <user_name>.github.io/<repo_name>
+\-- import: sarvom.github.io/jetbrains-typography
 
 -- site-doc.header: Next Step
 
-Done! `<repo_name>` is now added. Lets define a `page` component:
+Done! `jetbrains-typography` is now added. Lets define a `page` component:
 
 -- cb.code:
 lang: ftd
 download: my-ds.ftd
 
-\-- import: <user_name>.github.io/<repo_name>
+\-- import: sarvom.github.io/jetbrains-typography
 
 \-- component page:
 caption title:
 body body:
 children wrap:
-ftd.type-data types: $<repo_name>.types
+ftd.type-data types: $jetbrains-typography.types
 
 \-- ftd.column:
 width: fill-container
@@ -132,7 +126,7 @@ In above code snippet we defined `page` component which has `types`, `title`,
 `body` and  `wrap` attributes.
 
 The `types` attribute used to pass a typography to it. In above example we have
-added `$<repo_name>.types` as default `ftd.type-data`. The
+added `$jetbrains-typography.types` as default `ftd.type-data`. The
 `ftd.type-data` contains all `fastn` default `inherited` types.
 
 The `title` attribute will be used for adding `page` titles. 
@@ -202,7 +196,7 @@ downloaded, add previously downloaded `my-ds.ftd` and `types.ftd` inside
 name and run `fastn serve`, load localhost web page on browser.
 
 e.g. `http://127.0.0.1:8001/types` You will see the `page` component using
-`<repo_name>` `types` applied to `inherited` types.
+`jetbrains-typography` `types` applied to `inherited` types.
 
 Done! isn't it simple? Try this and don't forget to jump on our [Discord](https://discord.gg/bucrdvptYd)
 
@@ -227,14 +221,14 @@ line-height.px: 60
 size.px: 52
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-hero-desktop:
 line-height.px: 60
 size.px: 52
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type heading-hero:
 desktop: $heading-hero-desktop
@@ -249,14 +243,14 @@ line-height.px: 48
 size.px: 40
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-large-desktop:
 line-height.px: 48
 size.px: 40
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type heading-large:
 desktop: $heading-large-desktop
@@ -271,13 +265,13 @@ line-height.px: 44
 size.px: 32
 letter-spacing.px: 0
 weight: 600
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-medium-desktop:
 line-height.px: 44
 size.px: 32
 letter-spacing.px: 0
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 weight: 600
 
 -- ftd.responsive-type heading-medium:
@@ -293,14 +287,14 @@ line-height.px: 36
 size.px: 24
 letter-spacing.px: 0
 weight: 500
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-small-desktop:
 line-height.px: 36
 size.px: 24
 letter-spacing.px: 0
 weight: 500
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type heading-small:
 desktop: $heading-small-desktop
@@ -316,14 +310,14 @@ line-height.px: 26
 size.px: 18
 letter-spacing.px: 0
 weight: 500
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-tiny-desktop:
 line-height.px: 26
 size.px: 18
 letter-spacing.px: 0
 weight: 500
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type heading-tiny:
 desktop: $heading-tiny-desktop
@@ -338,13 +332,13 @@ line-height.px: 28
 size.px: 20
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type copy-large-desktop:
 line-height.px: 28
 size.px: 20
 letter-spacing.px: 0
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 weight: 400
 
 -- ftd.responsive-type copy-large:
@@ -360,13 +354,13 @@ line-height.px: 24
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type copy-regular-desktop:
 line-height.px: 24
 size.px: 16
 letter-spacing.px: 0
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 weight: 400
 
 -- ftd.responsive-type copy-regular:
@@ -382,7 +376,7 @@ line-height.px: 20
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 
 -- ftd.type copy-small-desktop:
@@ -390,7 +384,7 @@ line-height.px: 20
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type copy-small:
 desktop: $copy-small-desktop
@@ -405,14 +399,14 @@ line-height.px: 18
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type fine-print-desktop:
 line-height.px: 18
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type fine-print:
 desktop: $fine-print-desktop
@@ -427,14 +421,14 @@ line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type blockquote-desktop:
 line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type blockquote:
 desktop: $blockquote-desktop
@@ -449,14 +443,14 @@ line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type source-code-desktop:
 line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type source-code:
 desktop: $source-code-desktop
@@ -471,14 +465,14 @@ line-height.px: 22
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type label-large-desktop:
 line-height.px: 22
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type label-large:
 desktop: $label-large-desktop
@@ -493,14 +487,14 @@ line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type label-small-desktop:
 line-height.px: 16
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type label-small:
 desktop: $label-small-desktop
@@ -515,14 +509,14 @@ line-height.px: 24
 size.px: 18
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type button-large-desktop:
 line-height.px: 24
 size.px: 18
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type button-large:
 desktop: $button-large-desktop
@@ -537,14 +531,14 @@ line-height.px: 21
 size.px: 16
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type button-medium-desktop:
 line-height.px: 21
 size.px: 16
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type button-medium:
 desktop: $button-medium-desktop
@@ -559,14 +553,14 @@ line-height.px: 19
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type button-small-desktop:
 line-height.px: 19
 size.px: 14
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type button-small:
 desktop: $button-small-desktop
@@ -581,14 +575,14 @@ line-height.px: 19
 size.px: 14
 letter-spacing.px: 0
 weight: 400
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type link-desktop:
 line-height.px: 19
 size.px: 14
 letter-spacing.px: 0
 weight: 700
-font-family: $inter-assets.fonts.Inter
+font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.responsive-type link:
 desktop: $link-desktop

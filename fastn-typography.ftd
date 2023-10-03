@@ -1,17 +1,17 @@
--- import: <user_name>.github.io/<repo_name>
+-- import: sarvom.github.io/jetbrains-typography
 
 
 
--- site-doc.doc-home: <repo_name> package
-site-title: `<repo_name>`
+-- site-doc.doc-home: jetbrains-typography package
+site-title: `jetbrains-typography`
 show-tabs: false
-github-url: <user_name>.github.io/<repo_name>
-current-package: <user_name>.github.io/<repo_name>
+github-url: sarvom.github.io/jetbrains-typography
+current-package: sarvom.github.io/jetbrains-typography
 
-Below are our default fastn `inherited` font types of <repo_name>.
+Below are our default fastn `inherited` font types of jetbrains-typography.
 
 -- display-type:
-types: $<repo_name>.types
+types: $jetbrains-typography.types
 
 
 -- end: site-doc.doc-home
