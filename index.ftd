@@ -224,8 +224,8 @@ weight: 700
 font-family: $jetbrains-assets.fonts.JetBrains-Mono
 
 -- ftd.type heading-hero-desktop:
-line-height.px: 60
-size.px: 52
+line-height.px: 72
+size.px: 64
 letter-spacing.px: 0
 weight: 700
 font-family: $jetbrains-assets.fonts.JetBrains-Mono
